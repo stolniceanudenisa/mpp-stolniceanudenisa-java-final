@@ -6,7 +6,7 @@ mpp-proiect-java-stolniceanudenisa created by GitHub Classroom
 - am implementat clasele din model si interfetele generale de la Repository
 
 
-## 2. Saptamana 4 - interfetele de la service in Java
+## 2. Saptamana 4 - databases si jurnalizare
 - am lucrat pe branch-ul "saptamana_4_db_jurnalizare"
 - implementarea claselor din repository folosind baze de date relationale
 - jurnalizarea claselor din repository

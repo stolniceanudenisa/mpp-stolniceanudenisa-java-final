@@ -1,5 +1,6 @@
-package org.example.repository;
+package org.example.persistence;
 
+import org.example.exceptions.EntityNotFoundException;
 import org.example.exceptions.InexistentEntityException;
 import org.example.model.Entity;
 
@@ -10,10 +11,6 @@ import org.example.model.Entity;
 //    E getById(ID id) throws EntityRepoException;
 //    Iterable<E> getAll()throws EntityRepoException;
 //} sau asa https://github.com/stefnmUBB/MPP_Lab/blob/master/Homework/lab2/java/repo/src/main/java/java/ro/ubbcluj/cs/stefnmubb/festivalsellpoint/repo/IRepo.java
-
-
-
-
 
 
 /**
@@ -30,7 +27,7 @@ public interface IRepository<ID, E extends Entity<ID>>{
      * @throws IllegalArgumentException if the id is null.
      * @throws InexistentEntityException if there is no entity with the given id
      */
-    E findOne(ID id) throws IllegalArgumentException;
+    E findOne(ID id);
 
     /**
      * Returns all entities in the repository
@@ -43,21 +40,29 @@ public interface IRepository<ID, E extends Entity<ID>>{
      */
     void clear();
 
-
     /**
      * Add an entity
+     * @param entity
+     * @return
      */
-    void save(E entity);
-
+    E add(E entity) ;
 
     /**
      * Update an entity
+     * @param entity
+     * @return
+     * @throws InexistentEntityException
+     * @throws IllegalArgumentException
      */
     void update(E entity);
 
 
     /**
      * Delete an entity
+     * @param id
+     * @throws InexistentEntityException
+     * @throws IllegalArgumentException
+     * @throws EntityNotFoundException
      */
     void delete(ID id);
 }

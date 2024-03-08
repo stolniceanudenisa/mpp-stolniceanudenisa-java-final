@@ -2,12 +2,12 @@ package org.example.model;
 
 import java.util.Objects;
 
-public class User extends Entity<String> {
+public class User extends Entity<Long> {
     private String username;
     private String password;
 
-    public User(String username, String password) {
-        this.setId(username);
+    public User(Long id, String username, String password) {
+        super(id);
         this.username = username;
         this.password = password;
     }
@@ -28,17 +28,12 @@ public class User extends Entity<String> {
         this.password = password;
     }
 
-//    @Override
-//    public String toString() {
-//        return this.username + " | " + this.password;
-//    }
 
     @Override
     public String toString() {
-        return "Agency{" +
-                "name='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        return "User:" +
+                " username: " + username + '\'' +
+                ", password: " + password + '\'' ;
     }
 
     @Override

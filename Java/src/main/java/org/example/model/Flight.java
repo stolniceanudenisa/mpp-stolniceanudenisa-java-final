@@ -8,7 +8,8 @@ public class Flight extends Entity<Long>{
     private String airport;
     private int availableSeats;
 
-    public Flight(String destination, LocalDateTime departureDateTime, String airport, int availableSeats) {
+    public Flight(Long id,String destination, LocalDateTime departureDateTime, String airport, int availableSeats) {
+        super(id);
         this.destination = destination;
         this.departureDateTime = departureDateTime;
         this.airport = airport;
@@ -49,11 +50,10 @@ public class Flight extends Entity<Long>{
 
     @Override
     public String toString() {
-        return "Flight{" +
-                "destination='" + destination + '\'' +
-                ", departureDateTime=" + departureDateTime +
-                ", airport='" + airport + '\'' +
-                ", availableSeats=" + availableSeats +
-                '}';
+        return "Flight: " +
+                "destination: '" + destination + '\'' +
+                ", departureDateTime: " + departureDateTime +
+                ", airport: " + airport + '\'' +
+                ", availableSeats: " + availableSeats + '\'';
     }
 }

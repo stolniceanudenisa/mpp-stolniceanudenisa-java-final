@@ -5,7 +5,8 @@ public class Client extends Entity<Long>{
     private String name;
     private String address;
 
-    public Client(String name, String address) {
+    public Client(Long id, String name, String address) {
+        super(id);
         this.name = name;
         this.address = address;
     }
@@ -26,11 +27,12 @@ public class Client extends Entity<Long>{
         this.address = address;
     }
 
+
+
     @Override
     public String toString() {
-        return "Client{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        return "Client: " +
+                "name: " + name + '\'' +
+                " address: '" + address + '\'' ;
     }
 }

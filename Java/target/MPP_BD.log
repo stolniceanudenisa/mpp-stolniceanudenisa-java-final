@@ -1,0 +1,175 @@
+08 mar. 2024 13:30:08,167 INFO  org.example.persistence.jdbc.ClientDbRepository 23 <init> - Initialising ClientRepository with properties {}
+08 mar. 2024 13:30:08,174 TRACE org.example.persistence.jdbc.ClientDbRepository 62 getAll - Enter
+08 mar. 2024 13:30:08,175 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:30:08,175 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:30:08,176 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... null
+08 mar. 2024 13:30:32,856 INFO  org.example.persistence.jdbc.ClientDbRepository 23 <init> - Initialising ClientRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:30:32,864 TRACE org.example.persistence.jdbc.ClientDbRepository 62 getAll - Enter
+08 mar. 2024 13:30:32,864 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:30:32,865 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:30:32,865 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:30:32,870 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:30:33,283 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1c6e0a08)
+08 mar. 2024 13:30:33,288 TRACE org.example.persistence.jdbc.ClientDbRepository 79 getAll - Exit with([Client: name: Ana Maria' address: 'Trifoiului 3', Client: name: Ion Pop' address: 'Bobului 2', Client: name: Maria Anghel' address: 'Spiclului 1', Client: name: Alex Popescu' address: '1 Decembrie', Client: name: Cristina Ionescu' address: 'Mihai Viteazu', Client: name: Alexandru Pop' address: 'Strada Closca 9'])
+08 mar. 2024 13:31:02,766 INFO  org.example.persistence.jdbc.ClientDbRepository 23 <init> - Initialising ClientRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:02,775 TRACE org.example.persistence.jdbc.ClientDbRepository 62 getAll - Enter
+08 mar. 2024 13:31:02,776 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:02,776 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:02,776 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:02,782 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:02,934 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1efdcd5)
+08 mar. 2024 13:31:02,943 TRACE org.example.persistence.jdbc.ClientDbRepository 79 getAll - Exit with([Client: name: Ana Maria' address: 'Trifoiului 3', Client: name: Ion Pop' address: 'Bobului 2', Client: name: Maria Anghel' address: 'Spiclului 1', Client: name: Alex Popescu' address: '1 Decembrie', Client: name: Cristina Ionescu' address: 'Mihai Viteazu', Client: name: Alexandru Pop' address: 'Strada Closca 9'])
+08 mar. 2024 13:31:02,961 INFO  org.example.persistence.jdbc.FlightDbRepository 20 <init> - Initialising FlightRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:02,962 TRACE org.example.persistence.jdbc.FlightDbRepository 104 getAll - Enter
+08 mar. 2024 13:31:02,962 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:02,963 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:02,963 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:02,964 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:02,965 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@49096b06)
+08 mar. 2024 13:31:02,968 ERROR org.example.persistence.jdbc.FlightDbRepository 127 getAll - java.sql.SQLException: Error parsing time stamp
+08 mar. 2024 13:31:02,969 TRACE org.example.persistence.jdbc.FlightDbRepository 130 getAll - Exit with([])
+08 mar. 2024 13:31:02,969 TRACE org.example.persistence.jdbc.FlightDbRepository 26 findOne - Enter
+08 mar. 2024 13:31:02,970 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:02,970 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@49096b06)
+08 mar. 2024 13:31:02,971 TRACE org.example.persistence.jdbc.FlightDbRepository 58 findOne - Exit
+08 mar. 2024 13:31:15,160 INFO  org.example.persistence.jdbc.ClientDbRepository 23 <init> - Initialising ClientRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:15,167 TRACE org.example.persistence.jdbc.ClientDbRepository 62 getAll - Enter
+08 mar. 2024 13:31:15,167 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:15,167 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:15,167 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:15,172 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:15,291 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1efdcd5)
+08 mar. 2024 13:31:15,295 TRACE org.example.persistence.jdbc.ClientDbRepository 79 getAll - Exit with([Client: name: Ana Maria' address: 'Trifoiului 3', Client: name: Ion Pop' address: 'Bobului 2', Client: name: Maria Anghel' address: 'Spiclului 1', Client: name: Alex Popescu' address: '1 Decembrie', Client: name: Cristina Ionescu' address: 'Mihai Viteazu', Client: name: Alexandru Pop' address: 'Strada Closca 9'])
+08 mar. 2024 13:31:15,306 INFO  org.example.persistence.jdbc.FlightDbRepository 20 <init> - Initialising FlightRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:15,306 TRACE org.example.persistence.jdbc.FlightDbRepository 26 findOne - Enter
+08 mar. 2024 13:31:15,306 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:15,307 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:15,307 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:15,307 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:15,308 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@49096b06)
+08 mar. 2024 13:31:15,310 TRACE org.example.persistence.jdbc.FlightDbRepository 58 findOne - Exit
+08 mar. 2024 13:31:35,059 INFO  org.example.persistence.jdbc.ClientDbRepository 23 <init> - Initialising ClientRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:35,067 TRACE org.example.persistence.jdbc.ClientDbRepository 62 getAll - Enter
+08 mar. 2024 13:31:35,068 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:35,068 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:35,068 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:35,073 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:35,189 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1623bbe5)
+08 mar. 2024 13:31:35,193 TRACE org.example.persistence.jdbc.ClientDbRepository 79 getAll - Exit with([Client: name: Ana Maria' address: 'Trifoiului 3', Client: name: Ion Pop' address: 'Bobului 2', Client: name: Maria Anghel' address: 'Spiclului 1', Client: name: Alex Popescu' address: '1 Decembrie', Client: name: Cristina Ionescu' address: 'Mihai Viteazu', Client: name: Alexandru Pop' address: 'Strada Closca 9'])
+08 mar. 2024 13:31:35,206 INFO  org.example.persistence.jdbc.FlightDbRepository 20 <init> - Initialising FlightRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:35,206 TRACE org.example.persistence.jdbc.FlightDbRepository 26 findOne - Enter
+08 mar. 2024 13:31:35,207 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:35,207 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:35,207 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:35,208 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:35,209 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4a183d02)
+08 mar. 2024 13:31:35,210 TRACE org.example.persistence.jdbc.FlightDbRepository 58 findOne - Exit
+08 mar. 2024 13:31:45,402 INFO  org.example.persistence.jdbc.BookingDbRepository 27 <init> - Initialising BookingRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:45,411 TRACE org.example.persistence.jdbc.BookingDbRepository 89 getAll - Enter
+08 mar. 2024 13:31:45,411 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:45,412 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:45,412 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:45,418 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:45,534 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7af1cd63)
+08 mar. 2024 13:31:45,538 TRACE org.example.persistence.jdbc.BookingDbRepository 137 getAll - Exit
+08 mar. 2024 13:31:45,538 TRACE org.example.persistence.jdbc.BookingDbRepository 33 findOne - Enter
+08 mar. 2024 13:31:45,539 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:45,539 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:45,539 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:45,540 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:45,541 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@291120f4)
+08 mar. 2024 13:31:45,542 TRACE org.example.persistence.jdbc.BookingDbRepository 83 findOne - Exit
+08 mar. 2024 13:31:45,552 INFO  org.example.persistence.jdbc.ClientDbRepository 23 <init> - Initialising ClientRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:45,553 TRACE org.example.persistence.jdbc.ClientDbRepository 62 getAll - Enter
+08 mar. 2024 13:31:45,553 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:45,553 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:45,554 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:45,554 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:45,555 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@49096b06)
+08 mar. 2024 13:31:45,557 TRACE org.example.persistence.jdbc.ClientDbRepository 79 getAll - Exit with([Client: name: Ana Maria' address: 'Trifoiului 3', Client: name: Ion Pop' address: 'Bobului 2', Client: name: Maria Anghel' address: 'Spiclului 1', Client: name: Alex Popescu' address: '1 Decembrie', Client: name: Cristina Ionescu' address: 'Mihai Viteazu', Client: name: Alexandru Pop' address: 'Strada Closca 9'])
+08 mar. 2024 13:31:45,562 INFO  org.example.persistence.jdbc.FlightDbRepository 20 <init> - Initialising FlightRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:31:45,562 TRACE org.example.persistence.jdbc.FlightDbRepository 26 findOne - Enter
+08 mar. 2024 13:31:45,563 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:31:45,563 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:31:45,563 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:31:45,564 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:31:45,565 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@143d9a93)
+08 mar. 2024 13:31:45,566 TRACE org.example.persistence.jdbc.FlightDbRepository 58 findOne - Exit
+08 mar. 2024 13:32:31,762 INFO  org.example.persistence.jdbc.UserDbRepository 23 <init> - Initialising UserRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:32:31,772 TRACE org.example.persistence.jdbc.UserDbRepository 62 getAll - Enter
+08 mar. 2024 13:32:31,772 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:32:31,773 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:32:31,773 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:32:31,778 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:32:31,958 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3c2772d1)
+08 mar. 2024 13:32:31,962 TRACE org.example.persistence.jdbc.UserDbRepository 79 getAll - Exit with([User: username: mihai_ilie', password: 123', User: username: adriana_dragan', password: 1234', User: username: alexandru_pop', password: 12345', User: username: alexandra090', password: 12'])
+08 mar. 2024 13:32:31,975 INFO  org.example.persistence.jdbc.BookingDbRepository 27 <init> - Initialising BookingRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:32:31,975 TRACE org.example.persistence.jdbc.BookingDbRepository 89 getAll - Enter
+08 mar. 2024 13:32:31,976 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:32:31,976 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:32:31,977 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:32:31,978 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:32:31,979 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@23eee4b8)
+08 mar. 2024 13:32:31,981 TRACE org.example.persistence.jdbc.BookingDbRepository 137 getAll - Exit
+08 mar. 2024 13:32:31,981 TRACE org.example.persistence.jdbc.BookingDbRepository 33 findOne - Enter
+08 mar. 2024 13:32:31,982 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:32:31,983 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:32:31,985 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:32:31,986 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:32:31,988 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@28952dea)
+08 mar. 2024 13:32:31,990 TRACE org.example.persistence.jdbc.BookingDbRepository 83 findOne - Exit
+08 mar. 2024 13:32:31,996 INFO  org.example.persistence.jdbc.ClientDbRepository 23 <init> - Initialising ClientRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:32:31,997 TRACE org.example.persistence.jdbc.ClientDbRepository 62 getAll - Enter
+08 mar. 2024 13:32:31,997 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:32:31,997 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:32:31,997 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:32:31,998 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:32:32,000 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4159e81b)
+08 mar. 2024 13:32:32,002 TRACE org.example.persistence.jdbc.ClientDbRepository 79 getAll - Exit with([Client: name: Ana Maria' address: 'Trifoiului 3', Client: name: Ion Pop' address: 'Bobului 2', Client: name: Maria Anghel' address: 'Spiclului 1', Client: name: Alex Popescu' address: '1 Decembrie', Client: name: Cristina Ionescu' address: 'Mihai Viteazu', Client: name: Alexandru Pop' address: 'Strada Closca 9'])
+08 mar. 2024 13:32:32,007 INFO  org.example.persistence.jdbc.FlightDbRepository 20 <init> - Initialising FlightRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 13:32:32,007 TRACE org.example.persistence.jdbc.FlightDbRepository 26 findOne - Enter
+08 mar. 2024 13:32:32,008 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 13:32:32,008 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 13:32:32,008 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 13:32:32,009 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 13:32:32,010 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@9f6e406)
+08 mar. 2024 13:32:32,011 TRACE org.example.persistence.jdbc.FlightDbRepository 58 findOne - Exit
+08 mar. 2024 14:08:22,579 INFO  org.example.persistence.jdbc.UserDbRepository 23 <init> - Initialising UserRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 14:08:22,587 TRACE org.example.persistence.jdbc.UserDbRepository 62 getAll - Enter
+08 mar. 2024 14:08:22,588 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 14:08:22,588 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 14:08:22,589 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 14:08:22,594 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 14:08:22,779 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3c2772d1)
+08 mar. 2024 14:08:22,783 TRACE org.example.persistence.jdbc.UserDbRepository 79 getAll - Exit with([User: username: mihai_ilie', password: 123', User: username: adriana_dragan', password: 1234', User: username: alexandru_pop', password: 12345', User: username: alexandra090', password: 12'])
+08 mar. 2024 14:08:22,793 INFO  org.example.persistence.jdbc.BookingDbRepository 27 <init> - Initialising BookingRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 14:08:22,793 TRACE org.example.persistence.jdbc.BookingDbRepository 89 getAll - Enter
+08 mar. 2024 14:08:22,794 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 14:08:22,794 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 14:08:22,794 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 14:08:22,795 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 14:08:22,796 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@23eee4b8)
+08 mar. 2024 14:08:22,797 TRACE org.example.persistence.jdbc.BookingDbRepository 137 getAll - Exit
+08 mar. 2024 14:08:22,798 TRACE org.example.persistence.jdbc.BookingDbRepository 33 findOne - Enter
+08 mar. 2024 14:08:22,798 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 14:08:22,799 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 14:08:22,800 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 14:08:22,800 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 14:08:22,802 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@28952dea)
+08 mar. 2024 14:08:22,803 TRACE org.example.persistence.jdbc.BookingDbRepository 83 findOne - Exit
+08 mar. 2024 14:08:22,810 INFO  org.example.persistence.jdbc.ClientDbRepository 23 <init> - Initialising ClientRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 14:08:22,810 TRACE org.example.persistence.jdbc.ClientDbRepository 62 getAll - Enter
+08 mar. 2024 14:08:22,811 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 14:08:22,811 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 14:08:22,812 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 14:08:22,813 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 14:08:22,814 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4159e81b)
+08 mar. 2024 14:08:22,817 TRACE org.example.persistence.jdbc.ClientDbRepository 79 getAll - Exit with([Client: name: Ana Maria' address: 'Trifoiului 3', Client: name: Ion Pop' address: 'Bobului 2', Client: name: Maria Anghel' address: 'Spiclului 1', Client: name: Alex Popescu' address: '1 Decembrie', Client: name: Cristina Ionescu' address: 'Mihai Viteazu', Client: name: Alexandru Pop' address: 'Strada Closca 9'])
+08 mar. 2024 14:08:22,825 INFO  org.example.persistence.jdbc.FlightDbRepository 20 <init> - Initialising FlightRepository with properties {mtasks.jdbc.driver=org.sqlite.JDBC, mtasks.jdbc.url=jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite}
+08 mar. 2024 14:08:22,825 TRACE org.example.persistence.jdbc.FlightDbRepository 26 findOne - Enter
+08 mar. 2024 14:08:22,826 TRACE org.example.utils.JdbcUtils 47 getConnection - Enter
+08 mar. 2024 14:08:22,826 TRACE org.example.utils.JdbcUtils 23 getNewConnection - Enter
+08 mar. 2024 14:08:22,827 INFO  org.example.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\Users\40766\IdeaProjects\mpp-proiect-java-stolniceanudenisa\mpp_db.sqlite
+08 mar. 2024 14:08:22,827 INFO  org.example.utils.JdbcUtils 34 getNewConnection - Loaded driver ...org.sqlite.JDBC
+08 mar. 2024 14:08:22,829 TRACE org.example.utils.JdbcUtils 56 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@9f6e406)
+08 mar. 2024 14:08:22,830 TRACE org.example.persistence.jdbc.FlightDbRepository 58 findOne - Exit

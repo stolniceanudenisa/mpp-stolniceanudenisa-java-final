@@ -109,10 +109,12 @@ public Iterable<Flight> getAll() {
             while (resultSet.next()) {
                 Long id = resultSet.getLong("flight_id");
                 String destination = resultSet.getString("destination");
-                Timestamp timestamp = resultSet.getTimestamp("departure_date_time");
-
-                // Parsing timestamp to LocalDateTime with explicit format
-                LocalDateTime departureDateTime = timestamp.toLocalDateTime();
+//                Timestamp timestamp = resultSet.getTimestamp("departure_date_time");
+//
+//                // Parsing timestamp to LocalDateTime with explicit format
+//                LocalDateTime departureDateTime = timestamp.toLocalDateTime();
+                LocalDateTime departureDateTime = resultSet
+                        .getTimestamp("departure_date_time").toLocalDateTime();
 
                 String airport = resultSet.getString("airport");
                 int availableSeats = resultSet.getInt("available_seats");
@@ -130,42 +132,6 @@ public Iterable<Flight> getAll() {
     logger.traceExit(flightList);
     return flightList;
 }
-//    @Override
-//    public Iterable<Flight> getAll() {
-//        logger.traceEntry();
-//        Connection con = jdbcUtils.getConnection();
-//        List<Flight> flightList = new ArrayList<>();
-//        try (PreparedStatement preSmt = con.prepareStatement("SELECT * FROM flights")) {
-//
-//            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-//            try (ResultSet resultSet = preSmt.executeQuery()) {
-//                while (resultSet.next()) {
-//                    Long id = resultSet.getLong("flight_id");
-//                    String destination = resultSet.getString("destination");
-//                    String timestampString = resultSet.getString("departure_date_time");
-//
-//                    // Parsing timestamp to LocalDateTime with explicit format
-//                    LocalDateTime departureDateTime = LocalDateTime.parse(timestampString, formatter);
-//
-//                    String airport = resultSet.getString("airport");
-//                    int availableSeats = resultSet.getInt("available_seats");
-//
-//                    Flight flight = new Flight(id, destination, departureDateTime, airport, availableSeats);
-//                    flight.setId(id);
-//
-//                    flightList.add(flight);
-//                }
-//            } catch (SQLException e) {
-//                logger.error(e);
-//                System.err.println("Error fetching flights from DB: " + e);
-//            }
-//
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        }
-//        logger.traceExit(flightList);
-//        return flightList;
-//    }
 
     @Override
     public void clear() {
@@ -185,8 +151,8 @@ public Iterable<Flight> getAll() {
 
             preparedStatement.setLong(1, entity.getId());
             preparedStatement.setString(2, entity.getDestination());
-//            preparedStatement.setTimestamp(3, Timestamp.valueOf(entity.getDepartureDateTime()));
-            preparedStatement.setString(3, entity.getDepartureDateTime().toString());
+            preparedStatement.setTimestamp(3, Timestamp.valueOf(entity.getDepartureDateTime()));
+//            preparedStatement.setString(3, entity.getDepartureDateTime().toString());
 
             preparedStatement.setString(4, entity.getAirport());
             preparedStatement.setInt(5, entity.getAvailableSeats());

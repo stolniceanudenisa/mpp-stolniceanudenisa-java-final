@@ -56,7 +56,7 @@ public class BookingDbRepository implements IBookingRepository {
                 Client client = new Client(idClient,clientName, address);
                 client.setId(idClient);
 
-                Long idFlight = resultSet.getLong("id_flight");
+                Long idFlight = resultSet.getLong("flight_id");
                 String destination = resultSet.getString("destination");
                 LocalDateTime departureDateTime = resultSet
                         .getTimestamp("departure_date_time").toLocalDateTime();
@@ -146,7 +146,7 @@ public class BookingDbRepository implements IBookingRepository {
     @Override
     public Booking add(Booking entity) {
         logger.traceEntry();
-        String sql = "INSERT INTO bookings VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO bookings VALUES (?, ?, ?, ?)";
 
         try (
                 Connection connection = jdbcUtils.getConnection()
@@ -172,11 +172,41 @@ public class BookingDbRepository implements IBookingRepository {
 
     @Override
     public void update(Booking entity) {
+        logger.traceEntry();
+        String sql = "UPDATE bookings SET flight_id = ?, client_id = ?, clients_name = ? WHERE booking_id = ?";
+        try (
+                Connection connection = jdbcUtils.getConnection()
+        ) {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setLong(1, entity.getFlight().getId());
+            preparedStatement.setLong(2, entity.getClient().getId());
+            String clientsList = String.join(",", entity.getPassengers());
+            preparedStatement.setString(3, clientsList);
+            preparedStatement.setLong(4, entity.getId());
 
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            logger.error(e);
+            System.out.println("Error DB la update booking"+ e);
+            e.printStackTrace();
+
+    }
+        logger.traceExit();
     }
 
     @Override
-    public void delete(Long aLong) {
+    public void delete(Long id) {
+
+        logger.traceEntry();
+        Connection conn = jdbcUtils.getConnection();
+        try(PreparedStatement preSmt= conn.prepareStatement("delete from bookings where booking_id=?")){
+            preSmt.setLong(1,id);
+            preSmt.executeUpdate();
+        }catch(SQLException e){
+            logger.error(e);
+            System.err.println("Error DB la delete booking "+e);
+        }
+        logger.traceExit(id);
 
     }
 

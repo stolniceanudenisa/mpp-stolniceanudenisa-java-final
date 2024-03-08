@@ -16,14 +16,14 @@ INSERT INTO users(user_id, username, password) VALUES
                     (2, 'adriana_dragan', '1234'),
                     (3, 'alexandru_pop', '12345');
 
-INSERT INTO flights(flight_id, destination, departure_date_time, airport, available_seats) VALUES
-                    (1, 'Charles de Gaulle', '2023-03-17 21:00', 'Avram Iancu', 180),
-                    (2, 'Bucuresti', '2023-03-18 14:00', 'Timisoara', 70),
-                    (3, 'Barcelona-El Prat', '2023-06-03 10:00', 'Schipol', 120),
-                    (4, 'Roma Fiumicino', '2022-05-06 07:00', 'London Heathrow', 125),
-                    (5, 'New York', '2024-03-10 08:00:00', 'JFK', 200),
-                    (6, 'Los Angeles', '2024-03-11 09:00:00', 'LAX', 150),
-                    (7, 'Chicago', '2024-03-12 10:00:00', 'New York', 180);
+-- INSERT INTO flights(flight_id, destination, departure_date_time, airport, available_seats) VALUES
+--                     (1, 'Charles de Gaulle', '2023-03-17 21:00', 'Avram Iancu', 180),
+--                     (2, 'Bucuresti', '2023-03-18 14:00', 'Timisoara', 70),
+--                     (3, 'Barcelona-El Prat', '2023-06-03 10:00', 'Schipol', 120),
+--                     (4, 'Roma Fiumicino', '2022-05-06 07:00', 'London Heathrow', 125),
+--                     (5, 'New York', '2024-03-10 08:00:00', 'JFK', 200),
+--                     (6, 'Los Angeles', '2024-03-11 09:00:00', 'LAX', 150),
+--                     (7, 'Chicago', '2024-03-12 10:00:00', 'New York', 180);
 
 INSERT INTO bookings(booking_id, flight_id, client_id, clients_name) VALUES
                    (1, 1, 1, 'Andrei,Rares'),

@@ -28,8 +28,8 @@ public class Main {
 //        clientDbRepository.update(client_u);
 
 //
-//        clientDbRepository.getAll().forEach(System.out::println);
-//        System.out.println();System.out.println();System.out.println();
+        clientDbRepository.getAll().forEach(System.out::println);
+        System.out.println();System.out.println();System.out.println();
 //
 // sau asa
         //        for(Client cl:clientDbRepository.getAll())

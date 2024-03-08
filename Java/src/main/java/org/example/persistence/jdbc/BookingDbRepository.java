@@ -180,6 +180,22 @@ public class BookingDbRepository implements IBookingRepository {
 
     }
 
+    @Override
+    public int getNumberOfBookingsForFlight(Long id) {
+        logger.traceEntry();
+        int numberOfBookings = 0;
+
+        List<Booking> flights = (List<Booking>) getAll();
+
+        for (Booking booking : flights) {
+            if (booking.getFlight().getId().equals(id)) {
+                numberOfBookings += booking.getPassengers().size() + 1;
+            }
+        }
+        logger.traceExit();
+        return numberOfBookings;
+    }
+
 
 //    public Long getLowestAvbId() {
 //        String sql = "SELECT MAX(id) FROM bookings";
@@ -200,20 +216,5 @@ public class BookingDbRepository implements IBookingRepository {
 //        return id;
 //    }
 
-//    @Override
-//    public int getNumberOfBookingsForFlight(Long id) {
-//        logger.traceEntry();
-//        int numberOfBookings = 0;
-//
-//        List<Booking> flights = (List<Booking>) findAll();
-//
-//        for (Booking booking : flights) {
-//            if (booking.getFlight().getId().equals(id)) {
-//                numberOfBookings += booking.getPassengers().size() + 1;
-//            }
-//        }
-//
-//        logger.traceExit();
-//        return numberOfBookings;
-//    }
+
 }

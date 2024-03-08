@@ -42,11 +42,10 @@ public class Booking extends Entity<Long>{
 
     @Override
     public String toString() {
-        return "Booking{" +
-                "flight=" + flight +
-                ", client=" + client +
-                ", passengers=" + passengers +
-                '}';
+        return "Booking: " +
+                "flight: " + flight +
+                ", client: " + client +
+                ", passengers: " + passengers + '\'';
     }
 
 }

@@ -57,7 +57,6 @@ public class Main {
 //        Flight flight_u = new Flight(6L,"Cluj", LocalDateTime.now(),"Aeroportul Cluj", 100);  // de terminat si update
 //        flightDbRepository.update(flight_u);
 
-
 //        flightDbRepository.getAll().forEach(System.out::println);
 //        System.out.println();System.out.println();System.out.println();
 

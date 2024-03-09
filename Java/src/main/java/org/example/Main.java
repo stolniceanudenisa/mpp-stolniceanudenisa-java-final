@@ -25,7 +25,6 @@ public class Main {
             System.out.println("Cannot find bd.config " + e);System.out.println();System.out.println();System.out.println();
         }
 
-
         ClientDbRepository clientDbRepository = new ClientDbRepository(props);
 //        clientDbRepository.add(new Client(99L,"Diana","AAAA"));
 //        clientDbRepository.delete(99L);
@@ -40,6 +39,7 @@ public class Main {
 //      sau asa
 //        for(Client cl:clientDbRepository.getAll())
 //            System.out.println(cl);
+
 
 
         UserDbRepository userDbRepository = new UserDbRepository(props);
@@ -87,6 +87,7 @@ public class Main {
 //        bookingDbRepository.update(booking_u);
         bookingDbRepository.getAll().forEach(System.out::println);
         System.out.println();System.out.println();System.out.println();
+
 
     }
 }

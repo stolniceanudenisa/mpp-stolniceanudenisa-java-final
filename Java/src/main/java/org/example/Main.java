@@ -18,9 +18,16 @@ public class Main {
     public static void main(String[] args) {
         Properties props = new Properties();
         try {
-            props.load(new FileReader("C:\\Users\\40766\\IdeaProjects\\mpp-proiect-java-stolniceanudenisa\\bd.properties"));
-            System.out.println("Found");
-            System.out.println();System.out.println();System.out.println();
+
+// metoda 2 pt mtasks si bd.properties
+//            props.load(new FileReader("C:\\Users\\40766\\IdeaProjects\\mpp-proiect-java-stolniceanudenisa\\bd.properties"));
+//            System.out.println("Found"+props);
+//            System.out.println();System.out.println();System.out.println();
+
+            props.load(new FileReader("./bd.config"));
+            System.out.println("Found!!. " + props);
+
+
         } catch (IOException e) {
             System.out.println("Cannot find bd.config " + e);System.out.println();System.out.println();System.out.println();
         }
@@ -49,8 +56,8 @@ public class Main {
 //        User user_u = new User(12L,"alexandra090","12");
 //        userDbRepository.update(user_u);
 
-//        userDbRepository.getAll().forEach(System.out::println);
-//        System.out.println();System.out.println();System.out.println();
+        userDbRepository.getAll().forEach(System.out::println);
+        System.out.println();System.out.println();System.out.println();
 
 
         FlightDbRepository flightDbRepository = new FlightDbRepository(props);
@@ -70,8 +77,8 @@ public class Main {
 //        Flight flight_u = new Flight(6L,"Cluj", LocalDateTime.now(),"Aeroportul Cluj", 100);  // de terminat si update
 //        flightDbRepository.update(flight_u);
 
-//        flightDbRepository.getAll().forEach(System.out::println);
-//        System.out.println();System.out.println();System.out.println();
+        flightDbRepository.getAll().forEach(System.out::println);
+        System.out.println();System.out.println();System.out.println();
 
 
         BookingDbRepository bookingDbRepository = new BookingDbRepository(props);

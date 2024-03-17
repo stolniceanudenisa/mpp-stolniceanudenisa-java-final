@@ -63,27 +63,6 @@ public interface IRepository<ID, E extends Entity<ID>>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //public interface IRepo <ID, E extends Entity<ID>> {
 //    E add(E e) throws EntityRepoException;
 //    E update(E e) throws EntityRepoException;

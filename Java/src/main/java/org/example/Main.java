@@ -19,6 +19,7 @@ public class Main {
         Properties props = new Properties();
         try {
 
+
 // metoda 2 pt mtasks si bd.properties
 //            props.load(new FileReader("C:\\Users\\40766\\IdeaProjects\\mpp-proiect-java-stolniceanudenisa\\bd.properties"));
 //            System.out.println("Found"+props);

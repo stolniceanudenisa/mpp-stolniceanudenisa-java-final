@@ -43,11 +43,6 @@ public class Main {
 //
         clientDbRepository.getAll().forEach(System.out::println);
         System.out.println();System.out.println();System.out.println();
-//
-//      sau asa
-//        for(Client cl:clientDbRepository.getAll())
-//            System.out.println(cl);
-
 
 
         UserDbRepository userDbRepository = new UserDbRepository(props);
@@ -77,6 +72,8 @@ public class Main {
 
 //        Flight flight_u = new Flight(6L,"Cluj", LocalDateTime.now(),"Aeroportul Cluj", 100);  // de terminat si update
 //        flightDbRepository.update(flight_u);
+
+
 
         flightDbRepository.getAll().forEach(System.out::println);
         System.out.println();System.out.println();System.out.println();

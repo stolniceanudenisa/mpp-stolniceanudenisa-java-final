@@ -102,7 +102,7 @@ public class BookingDbRepository implements IBookingRepository {
 
             while (resultSet.next()) {
                 Long idBooking = resultSet.getLong("booking_id");
-                System.out.println(idBooking);
+                // System.out.println(idBooking);
 
                 Long idClient = resultSet.getLong("client_id");
                 String clientName = resultSet.getString("client_name");

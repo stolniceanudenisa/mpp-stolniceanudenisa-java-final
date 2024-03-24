@@ -44,7 +44,7 @@ public class ClientDbRepository implements IClientRepository {
                 String clientName = resultSet.getString("client_name");
                 String address = resultSet.getString("address");
 
-                client = new Client(id, clientName, address);
+                client = new Client(clientName, address);
                 client.setId(aLong);
             }
         } catch (SQLException e) {
@@ -68,7 +68,7 @@ public class ClientDbRepository implements IClientRepository {
                     Long id = resultSet.getLong("client_id");
                     String clientName = resultSet.getString("client_name");
                     String address = resultSet.getString("address");
-                    Client client = new Client(id,clientName,address);
+                    Client client = new Client(clientName,address);
                     clientList.add(client);
                 }
             }
@@ -97,7 +97,7 @@ public class ClientDbRepository implements IClientRepository {
         ) {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
-            preparedStatement.setLong(1, entity.getId());
+            //preparedStatement.setLong(1, entity.getId());
             preparedStatement.setString(2, entity.getName());
             preparedStatement.setString(3, entity.getAddress());
 

@@ -8,8 +8,8 @@ public class Flight extends Entity<Long>{
     private String airport;
     private int availableSeats;
 
-    public Flight(Long id,String destination, LocalDateTime departureDateTime, String airport, int availableSeats) {
-        super(id);
+    public Flight(String destination, LocalDateTime departureDateTime, String airport, int availableSeats) {
+
         this.destination = destination;
         this.departureDateTime = departureDateTime;
         this.airport = airport;

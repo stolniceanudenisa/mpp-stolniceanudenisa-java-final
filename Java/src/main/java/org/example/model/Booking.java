@@ -8,8 +8,8 @@ public class Booking extends Entity<Long>{
     private Client client;
     private List<String> passengers;
 
-    public Booking(Long id,Flight flight, Client client, List<String> passengers) {
-        super(id);
+    public Booking(Flight flight, Client client, List<String> passengers) {
+
 
         this.flight = flight;
         this.client = client;

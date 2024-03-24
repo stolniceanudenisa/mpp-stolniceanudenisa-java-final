@@ -34,7 +34,7 @@ public class Main {
         }
 
         ClientDbRepository clientDbRepository = new ClientDbRepository(props);
-//        clientDbRepository.add(new Client(99L,"Diana","AAAA"));
+        clientDbRepository.add(new Client("Diana","AAAA"));
 //        clientDbRepository.delete(99L);
 //        clientDbRepository.findOne(1L);
 //        Client client_u = new Client(6L,"Alexandru Pop","Strada Closca 9");

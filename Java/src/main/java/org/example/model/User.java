@@ -6,8 +6,8 @@ public class User extends Entity<Long> {
     private String username;
     private String password;
 
-    public User(Long id, String username, String password) {
-        super(id);
+    public User( String username, String password) {
+
         this.username = username;
         this.password = password;
     }

@@ -46,7 +46,7 @@ public class FlightDbRepository implements IFlightRepository {
                 int availableSeats = resultSet.getInt("available_seats");
 
 
-                flight = new Flight(id, destination, departureDateTime, airport, availableSeats);
+                flight = new Flight(destination, departureDateTime, airport, availableSeats);
                 flight.setId(aLong);
             }
         } catch (SQLException e) {
@@ -119,7 +119,7 @@ public Iterable<Flight> getAll() {
                 String airport = resultSet.getString("airport");
                 int availableSeats = resultSet.getInt("available_seats");
 
-                Flight flight = new Flight(id, destination, departureDateTime, airport, availableSeats);
+                Flight flight = new Flight( destination, departureDateTime, airport, availableSeats);
                 flight.setId(id);
 
                 flightList.add(flight);
@@ -232,7 +232,7 @@ public Iterable<Flight> getAll() {
                 String airport = resultSet.getString("airport");
                 int availableSeats = resultSet.getInt("available_seats");
 
-                Flight flight = new Flight(id,destination1, departureDateTime, airport, availableSeats);
+                Flight flight = new Flight(destination1, departureDateTime, airport, availableSeats);
                 flight.setId(id);
 
                 flights.add(flight);

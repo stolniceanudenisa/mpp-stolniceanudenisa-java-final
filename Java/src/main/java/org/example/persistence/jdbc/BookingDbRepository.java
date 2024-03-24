@@ -53,7 +53,7 @@ public class BookingDbRepository implements IBookingRepository {
                 String clientName = resultSet.getString("client_name");
                 String address = resultSet.getString("address");
 
-                Client client = new Client(idClient,clientName, address);
+                Client client = new Client(clientName, address);
                 client.setId(idClient);
 
                 Long idFlight = resultSet.getLong("flight_id");
@@ -63,14 +63,14 @@ public class BookingDbRepository implements IBookingRepository {
                 String airport = resultSet.getString("airport");
                 int availableSeats = resultSet.getInt("available_seats");
 
-                Flight flight = new Flight(idFlight,destination, departureDateTime, airport, availableSeats);
+                Flight flight = new Flight(destination, departureDateTime, airport, availableSeats);
                 flight.setId(idFlight);
 
                 String passengersString = resultSet.getString("clients_name");
 
                 List<String> passengers = Arrays.asList(passengersString.split(","));
 
-                booking = new Booking(bookingId,flight, client, passengers);
+                booking = new Booking(flight, client, passengers);
                 booking.setId(bookingId);
 
             }
@@ -107,7 +107,7 @@ public class BookingDbRepository implements IBookingRepository {
                 Long idClient = resultSet.getLong("client_id");
                 String clientName = resultSet.getString("client_name");
                 String address = resultSet.getString("address");
-                Client client = new Client(idClient,clientName, address);
+                Client client = new Client(clientName, address);
                 client.setId(idClient);
 
                 Long idFlight = resultSet.getLong("flight_id");
@@ -116,14 +116,14 @@ public class BookingDbRepository implements IBookingRepository {
                         .getTimestamp("departure_date_time").toLocalDateTime();
                 String airport = resultSet.getString("airport");
                 int availableSeats = resultSet.getInt("available_seats");
-                Flight flight = new Flight(idFlight,destination, departureDateTime, airport, availableSeats);
+                Flight flight = new Flight(destination, departureDateTime, airport, availableSeats);
                 flight.setId(idFlight);
 
                 String passengersString = resultSet.getString("clients_name");
 
                 List<String> passengers = Arrays.asList(passengersString.split(","));
 
-                Booking booking = new Booking(idBooking,flight, client, passengers);
+                Booking booking = new Booking(flight, client, passengers);
                 booking.setId(idBooking);
 
                 bookings.add(booking);

@@ -5,8 +5,7 @@ public class Client extends Entity<Long>{
     private String name;
     private String address;
 
-    public Client(Long id, String name, String address) {
-        super(id);
+    public Client(String name, String address) {;
         this.name = name;
         this.address = address;
     }

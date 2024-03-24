@@ -44,7 +44,7 @@ public class UserDbRepository implements IUserRepository {
                 String username = resultSet.getString("username");
                 String password = resultSet.getString("password");
 
-                user = new User(id, username, password);
+                user = new User( username, password);
                 user.setId(aLong);
             }
         } catch (SQLException e) {
@@ -68,7 +68,7 @@ public class UserDbRepository implements IUserRepository {
                     Long id = resultSet.getLong("user_id");
                     String username = resultSet.getString("username");
                     String password = resultSet.getString("password");
-                    User user = new User(id,username,password);
+                    User user = new User(username,password);
                     userList.add(user);
                 }
             }
